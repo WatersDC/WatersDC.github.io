@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WCD | Modern Coding</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --accent-blue: #00d2ff;
+            --accent-purple: #9d50bb;
+            --text-color: #ffffff;
+            --nav-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        /* Nav Menu */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: var(--nav-bg);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            opacity: 0.8;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            opacity: 1;
+            color: var(--accent-blue);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: radial-gradient(circle at center, #1a1f2e 0%, #0d1117 100%);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #8b949e;
+            max-width: 600px;
+        }
+
+        .cta-button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(45deg, var(--accent-blue), var(--accent-purple));
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        /* Logo Mockup (150x400 style) */
+        .logo-container {
+            width: 400px;
+            height: 150px;
+            border: 1px solid rgba(0, 210, 255, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(157, 80, 187, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">WCD</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="logo-container">
+            <h1 class="logo" style="font-size: 80px;">WCD</h1>
+        </div>
+        <h1>Elevate Your Code</h1>
+        <p>A modern ecosystem built for developers who prioritize speed, security, and sleek design.</p>
+        <button class="cta-button">Get Started</button>
+    </section>
+
+</body>
+</html>
